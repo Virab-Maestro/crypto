@@ -31,11 +31,10 @@ export default function RootLayout({
 
           <div className="hidden absolute -z-10 top-[4%] md:top-[3%] lg:top-[4%] xl:top-[6%] 2xl:top-[3%] -right-[1%] 2xl:right-[0%] sm:block">
             <div className="relative">
-              <img className="w-[500px] md:w-[600px] lg:w-[750px] 2xl:w-[870px] " src="/images/home_img.png" alt="" />
+              <img className="w-[500px] md:w-[600px] lg:w-[750px] 2xl:w-[870px] " src="/images/home_img.png" alt="home_img" />
               <div className="absolute top-[47%] right-[48%] xl:right-[55%] text-xl xl:text-2xl text-center font-bold bg-[#07003E] w-[135px] h-[135px] xl:w-[175px] xl:h-[175px] rounded-full py-6 xl:py-10 px-4 border border-[#DF1CFF] ">Cyber Samurai #177</div>
             </div>
           </div>
-
         </div>
       </body>
     </html>
