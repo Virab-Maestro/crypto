@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 export default function Navbar() {
 
   return (
-    <header className="py-5">
+    <header className="py-5 xl:py-7">
         <nav className="flex justify-between items-center">
             <div className="bg-clip-text text-transparent bg-gradient-to-b from-[#DF1CFF] to-[#EA0070] font-extrabold text-lg md:text-xl lg:text-2xl 2xl:text-3xl uppercase"> <a href="#">knft.</a></div>
             <Burger></Burger>

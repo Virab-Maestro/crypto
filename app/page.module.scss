@@ -30,13 +30,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
-            top: 45%;
-            left: 70%;
+            top: 48%;
+            left: 89%;
         }
     }
 
     &__title{
         position: relative;
+        line-height: 130%;
         &::after{
             content: "";
             position: absolute;
@@ -64,6 +65,11 @@
             &::after{
                 width: 500px;
                 height: 500px;
+            }
+        }
+        &__dec-1{
+            &::before{
+                left: 83%;
             }
         }
     }
