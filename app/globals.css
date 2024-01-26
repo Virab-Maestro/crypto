@@ -32,33 +32,15 @@ a{
   text-decoration: none;
 }
 
-.Button{
-  display: none;
-}
+
 .Button:focus, .Button:hover{
   box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.3);
 }
-@media(min-width: 640px){
-  .Button{
-    padding: 8px 10px;
-    display: block;
-  }
-}
-@media(min-width: 768px){
-  .Button{
-    padding: 8px 10px;
-  }
-}
-@media(min-width: 1024px){
-  .Button{
-    padding: 8px 25px;
-  }
-}
-@media(min-width: 1536){
+/* @media(min-width: 1536){
   .Button{
     padding: 10px 40px;
   }
-}
+} */
 /* sm - 640
 md - 768
 lg - 1024

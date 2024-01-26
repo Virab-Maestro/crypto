@@ -10,7 +10,7 @@ interface ButtonRegProps extends ButtonProps{
 const ButtonReg = styled(Button, {
   shouldForwardProp: (prop)=> prop!=="width"
 })<ButtonRegProps>(({width=false,theme})=>({
-    width: width ? '100%' : '180px',
+    width: width ? '180px' : '100%',
     // height: '50px',
     background: 'linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%)!important',
     fontSize: '14px',
@@ -41,7 +41,7 @@ export default function Button1({title, width}:Props) {
   return (
     <>
         {/* <div>Button1</div> */}
-        <ButtonReg width={width}>{title}</ButtonReg>
+        <ButtonReg width={true}>{title}</ButtonReg>
     </>
   )
 }

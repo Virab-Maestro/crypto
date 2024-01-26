@@ -128,7 +128,7 @@ export default function Burger() {
                         fontFamily: "Poppins",
                     }}
                     >
-                    <Button className='focus:bg-[#07003E]' variant="contained" sx={{ mb: 2, width: 1 }}>
+                    <Button className='focus:bg-[#07003E] hover:bg-[#07003E]' variant="contained" sx={{ mb: 2, width: 1 }}>
                         Gen in touch
                     </Button>
                 </Box>

@@ -2,7 +2,7 @@
     &::before, &::after{
         content: '';
         position: absolute;
-        z-index: -10;
+        z-index: -100;
         filter: blur(250px);
         border-radius: 50%;
     };
@@ -43,6 +43,7 @@
             position: absolute;
             top: 0;
             right: -25%;
+            z-index: -10;
             width: 400px;
             height: 400px;opacity: 0.15;
             background: conic-gradient(from 180deg at 50% 50%, #D9D9D9 0deg, #297FFF 0.035999999090563506deg, #BF38FF 78.75deg, #CF68FF 187.49999284744263deg, #28CBFF 268.1250071525574deg, #E1A1FF 360deg);
