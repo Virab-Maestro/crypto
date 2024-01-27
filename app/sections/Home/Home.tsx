@@ -9,7 +9,7 @@ export default function Home() {
         <FramerTest classes="mb-14 lg:mb-20 xl:mb-44" position="right">
           <h1 className={`${style["home__title"]} capitalize text-4xl lg:text-6xl sm:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[550px] mb-5 lg:mb-6`}>Buy, Create & Sell <span className="text-[#1EE0E1]">Unique NFTs</span> File.</h1>
           <p className={`${style["home__dec-1"]} text-sm lg:text-lg max-w-[320px] sm:max-w-[280px] lg:max-w-[380px] xl:max-w-[450px] leading-6 relative mb-8 `}>NFTs are used for digital art and collectibles, GameFi projects, metaverses, and more.</p>
-          <Button1 title="Explore NFTs"/>
+          <Button1 title="Explore NFTs" width={false}/>
         </FramerTest>
         {/* </div> */}
 

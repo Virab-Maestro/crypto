@@ -1,5 +1,5 @@
 import Burger from "../Burger/Burger";
-import { Button } from "@mui/material";
+import Button2 from "../Button2/Button2";
 
 export default function Navbar() {
 
@@ -15,32 +15,7 @@ export default function Navbar() {
                 <li className="opacity-45 hover:opacity-100 transition duration-150"><a href="#">Terms & Co.</a></li>
                 <li className="opacity-45 hover:opacity-100 transition duration-150"><a href="#">Contact</a></li>
             </ul>
-              <Button className="Button" variant="outlined" size='small' sx={{
-                borderRadius: '8px',
-                background: 'linear-gradient(#04011C, #04011C) padding-box,linear-gradient(to right, #E50AA7, rgba(208, 17, 204, 0.15)) border-box !important',
-                border: '1.3px solid transparent !important',
-                padding: "7px 0",
-                display: 'none',
-                color: 'white',
-                fontSize: '12px',
-                textTransform: 'capitalize',
-                fontWeight: '700',
-                '@media(min-width: 640px)':{
-                  display: 'block',
-                  padding: '8px 10px'
-                },
-                '@media(min-width: 768px)':{
-                  fontSize: '14px',
-                },
-                '@media(min-width: 1024px)':{
-                  fontSize: '16px',
-                  padding: '8px 25px'
-                },
-                '@media(min-width: 1280px)':{
-                  fontSize: '20px',
-                  padding: '8px 35px'
-                }
-              }}>Get in Touch</Button>
+            <Button2>Get In Touch</Button2>
         </nav>
     </header>
   )

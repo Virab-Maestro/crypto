@@ -2,6 +2,7 @@
 import style from "./Product.module.scss";
 import { useState } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Button2 from "../../components/Button2/Button2";
 
 export default function Products() {
     const [tabs, setTabs] = useState([
@@ -21,8 +22,8 @@ export default function Products() {
 
     return (
         <section id="Products" className="">
-            <h2 className="text-2xl text-center font-semibold capitalize mb-5"><span className="font-normal text-[#1EE0E1] italic">Most Popular</span> NFTs</h2>
-            <div className="flex justify-center items-center gap-9 text-sm mb-14">
+            <h2 className="text-2xl sm:text-3xl xl:text-4xl text-center font-semibold capitalize mb-5 xl:mb-8"><span className="font-normal text-[#1EE0E1] italic">Most Popular</span> NFTs</h2>
+            <div className="flex justify-center items-center gap-9 text-sm sm:text-base xl:text-lg mb-14">
                 {tabs.map((el, i)=>(
                     <div 
                     className={`cursor-pointer ${el.classes}`}
@@ -31,7 +32,7 @@ export default function Products() {
                     >{el.title}</div>    
                 ))}
             </div> 
-            <div className="flex flex-col gap-y-10">
+            <div className="flex flex-col flex-wrap lg:flex-row gap-y-10 lg:gap-8">
                 <ProductCard title="CCyber Samurai #575" price={8.5} rating={4} img="/images/nft-3.png"></ProductCard>
                 <ProductCard title="Cyber Samurai #784" price={7.5} rating={3} img="/images/nft-2.png"></ProductCard>
                 <ProductCard title="Cyber Samurai #475" price={15.5} rating={3} img="/images/nft-3.png"></ProductCard>
@@ -40,6 +41,7 @@ export default function Products() {
                 <ProductCard title="Cyber Samurai #784" price={7.5} rating={4} img="/images/nft-5.png"></ProductCard>
                 <ProductCard title="Cyber Samurai #475" price={15.5} rating={4} img="/images/nft-6.png"></ProductCard>
             </div>
+            <Button2 centered={true}>Explore All NFTs</Button2>
         </section>
     )
 }
