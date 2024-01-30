@@ -44,6 +44,10 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                 height: '376px',
                 overflowY: 'hidden',
                 transition: 'height .15s',
+                '&:hover .MuiCardMedia-img':{
+                    height: '160px',
+                    transitionDelay: '.23s'
+                },
                 '@media(pointer: coarse)':{
                     '.MuiCardMedia-img':{
                         height: '160px',
@@ -54,11 +58,15 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                     width: '370px',
                     height: '460px',
                     padding: '18px 18px 0 18px',
+                    '.MuiCardMedia-img':{
+                        height: '345px',
+                        transitionDelay: '.23s'
+                    },
+                    '&:hover .MuiCardMedia-img':{
+                        height: '270px',
+                        transitionDelay: '.23s'
+                    }
                 },
-                '&:hover .MuiCardMedia-img':{
-                    height: '160px',
-                    transitionDelay: '.23s'
-                }
             }}>
                 <CardMedia
                 component="img"
@@ -80,8 +88,20 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                     "&:hover":{backgroundColor: 'rgba(199, 199, 199, .17)', 
                 }}} />
                 <CardContent style={{ padding: '16px 0 0 0'}}>
-                    <Box display='flex' sx={{justifyContent: 'space-between' ,gap: '35px'}}>
-                        <Typography variant="h6" component="div" color="white">
+                    <Box 
+                    display='flex' 
+                    sx={{
+                        justifyContent: 'space-between', 
+                        gap: '35px',
+                    }}>
+                        <Typography variant="h6" component="div" color="white"
+                        sx={{
+                            '@media(min-width:1280px)':{
+                                maxWidth: '225px',
+                                maxHeight: '32px',
+                                overflow: 'hidden'
+                            },
+                        }}>
                         {title}
                         </Typography>
                         <Box>

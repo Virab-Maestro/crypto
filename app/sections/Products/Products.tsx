@@ -3,6 +3,7 @@ import style from "./Product.module.scss";
 import { useState } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Button2 from "../../components/Button2/Button2";
+import FramerTest from "../../components/FramerTest/FramerTest";
 
 export default function Products() {
     const [tabs, setTabs] = useState([
@@ -32,14 +33,13 @@ export default function Products() {
                     >{el.title}</div>    
                 ))}
             </div> 
-            <div className="flex flex-col flex-wrap lg:flex-row gap-y-10 lg:gap-8">
-                <ProductCard title="CCyber Samurai #575" price={8.5} rating={4} img="/images/nft-3.png"></ProductCard>
-                <ProductCard title="Cyber Samurai #784" price={7.5} rating={3} img="/images/nft-2.png"></ProductCard>
-                <ProductCard title="Cyber Samurai #475" price={15.5} rating={3} img="/images/nft-3.png"></ProductCard>
-
-                <ProductCard title="Cyber Samurai #784" price={7.5} rating={5} img="/images/nft-4.png"></ProductCard>
-                <ProductCard title="Cyber Samurai #784" price={7.5} rating={4} img="/images/nft-5.png"></ProductCard>
-                <ProductCard title="Cyber Samurai #475" price={15.5} rating={4} img="/images/nft-6.png"></ProductCard>
+            <div className="flex flex-col flex-wrap lg:flex-row gap-y-10 lg:gap-8 xl:mb-16">
+                <FramerTest position="bottom"><ProductCard title="CCyber Samurai #575" price={8.5} rating={4} img="/images/nft-3.png"></ProductCard></FramerTest>
+                <FramerTest position="bottom"><ProductCard title="Cyber Samurai #784" price={7.5} rating={3} img="/images/nft-2.png"></ProductCard></FramerTest>
+                <FramerTest position="bottom"><ProductCard title="Cyber Samurai #475" price={15.5} rating={3} img="/images/nft-3.png"></ProductCard></FramerTest>
+                <FramerTest position="bottom"><ProductCard title="Cyber Samurai #784" price={7.5} rating={5} img="/images/nft-4.png"></ProductCard></FramerTest>
+                <FramerTest position="bottom"><ProductCard title="Cyber Samurai #784" price={7.5} rating={4} img="/images/nft-5.png"></ProductCard></FramerTest>
+                <FramerTest position="bottom"><ProductCard title="Cyber Samurai #475" price={15.5} rating={4} img="/images/nft-6.png"></ProductCard></FramerTest>
             </div>
             <Button2 centered={true}>Explore All NFTs</Button2>
         </section>
