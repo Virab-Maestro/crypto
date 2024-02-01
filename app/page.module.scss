@@ -53,7 +53,51 @@
     }
 }
 
-@media(min-width: 640px){
+.guide{
+    &__card{
+        &::before, &::after, &-title::before{
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+        }
+        &::before{
+            background-color: #0D0D2D; 
+            top: 0px;
+            right: 82px;
+            box-shadow: 9px -9px 0px 1px #04011D;
+        }
+        &::after{
+            background-color: #0D0D2D; 
+            top: 44px;
+            right: 0px;
+            box-shadow: 9px -9px 0px 1px #04011D;
+        }
+    }
+
+    &__card-title{
+        &::before{
+            background: transparent;
+            top: 23px;
+            right: 64px;
+            box-shadow: -7px 10px 0px 1px #0D0D2D;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        top: -36px;
+        right: 4px;
+        background: #04011D;
+        box-shadow: 0px 0px 0px 6px #04011D;
+    }
+}
+
+@media(min-width: 640px){ //guide, home
     .home{
         &::before{
             width: 1200px;
@@ -75,19 +119,40 @@
             }
         }
     }
-    
+    .guide{
+        &__card{
+            &::before, &::after, &-title::before{
+                width: 25px;
+                height: 25px;
+            }
+            &::before{
+                right: 97px;
+                box-shadow: 16px -16px 0px 1px #04011D;
+            }
+            &::after{
+                top: 49px;
+                box-shadow: 16px -16px 0px 1px #04011D;
+            }
+        }
+        &__card-title{
+            &::before{
+                top: 25px;
+                right: 72px;
+            }
+        }
+        &__icon{
+            right: 12px;
+            box-shadow: 0px 0px 0px 12px #04011D;
+        }
+    }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px){ //home
     .home{
-        &::before{
+        &::before, &::after{
             width: 1600px;
             height: 1600px;
         }
-        &::after{
-            width: 1700px;
-            height: 2000px;
-        };
         &__title{
             &::after{
                 top: -70%;
@@ -109,7 +174,7 @@
     }
 }
 
-@media(min-width: 1280px){
+@media(min-width: 1280px){ //home
     .home{
         &__dec-1{
             &::before{
@@ -123,17 +188,43 @@
     }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1536px){ //guide, home
     .home{
         &::before, &::after{
             width: 2500px;
-            height: 2500px;
+            height: 1700px;
         }
         &__title{
             &::after{
                 width: 950px;
                 height: 850px;
             }
+        }
+    }
+
+    .guide{
+        &__card{
+            &::before, &::after, &-title::before{
+                width: 30px;
+                height: 30px;
+            }
+            &::before{
+                right: 100px;
+            }
+            &::after{
+                top: 63px;
+            }
+        }
+        &__card-title{
+            &::before{
+                top: 34px;
+                right: 69px;
+            }
+        }
+        &__icon{
+            top: -25px;
+            right: 12px;
+            box-shadow: 0px 0px 0px 14px #04011D;
         }
     }
 }

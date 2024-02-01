@@ -1,3 +1,4 @@
+import "./page.module.scss";
 import Guide from "./sections/Guide/Guide";
 import Home from "./sections/Home/Home";
 import Products from "./sections/Products/Products";
