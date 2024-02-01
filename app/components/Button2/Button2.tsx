@@ -31,8 +31,24 @@ const ButtonSpec = styled(Button, {
       display: 'block',
       padding: '10px 20px',
       margin: '30px auto 0'
-    },}
-    ),
+    },
+    '@media(min-width: 640px)':{
+      fontSize: '14px',
+      fontWeight: '800',
+      display: 'block',
+      padding: '10px 20px',
+      margin: '30px auto 0'
+    },
+    '@media(min-width: 1024px)':{
+      fontSize: '16px',
+      padding: '8px 25px'
+    },
+    '@media(min-width: 1280px)':{
+      fontSize: '20px',
+      padding: '8px 35px'
+    }
+  }),
+  ...(!centered && {
     '@media(min-width: 640px)':{
       display: 'block',
       padding: '8px 10px'
@@ -48,6 +64,7 @@ const ButtonSpec = styled(Button, {
       fontSize: '20px',
       padding: '8px 35px'
     }
+  }),
 }))
 
 interface Button2Props{

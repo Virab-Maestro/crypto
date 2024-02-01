@@ -24,7 +24,7 @@ export default function Products() {
     return (
         <section id="Products" className="">
             <h2 className="text-2xl sm:text-3xl xl:text-4xl text-center font-semibold capitalize mb-5 xl:mb-8"><span className="font-normal text-[#1EE0E1] italic">Most Popular</span> NFTs</h2>
-            <div className="flex justify-center items-center gap-9 text-sm sm:text-base xl:text-lg mb-14">
+            <div className="flex justify-center items-center gap-5 sm:gap-9 text-sm sm:text-base xl:text-lg mb-14">
                 {tabs.map((el, i)=>(
                     <div 
                     className={`cursor-pointer ${el.classes}`}
@@ -33,7 +33,8 @@ export default function Products() {
                     >{el.title}</div>    
                 ))}
             </div> 
-            <div className="flex flex-col flex-wrap lg:flex-row gap-y-10 lg:gap-8 xl:mb-16">
+            {/* lg:flex-row lg:gap-8 added: items-center justify-center*/}
+            <div className="flex flex-col items-center justify-center flex-wrap md:flex-row md:gap-8 gap-y-10 xl:mb-16">
                 <FramerTest position="bottom"><ProductCard title="CCyber Samurai #575" price={8.5} rating={4} img="/images/nft-3.png"></ProductCard></FramerTest>
                 <FramerTest position="bottom"><ProductCard title="Cyber Samurai #784" price={7.5} rating={3} img="/images/nft-2.png"></ProductCard></FramerTest>
                 <FramerTest position="bottom"><ProductCard title="Cyber Samurai #475" price={15.5} rating={3} img="/images/nft-3.png"></ProductCard></FramerTest>
