@@ -14,7 +14,7 @@ export default function GuideCard({title, text, image}:GuideCardProps) {
         {/* max - 22px */}
         <div className={`${style["guide__card-title"]} text-base sm:text-xl 2xl:text-2xl mb-2 sm:mb-4 sm:max-w-[430px]`}>{title}</div> 
         {/* max - 20px */}
-        <div className="text-sm sm:text-lg 2xl:text-xl">{text}</div>
+        <p className="text-sm sm:text-lg 2xl:text-xl">{text}</p>
         <div className={`${style["guide__icon"]} `}>
             <Image src={image} alt="guide-icon"/>
         </div>
