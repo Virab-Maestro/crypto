@@ -14,7 +14,7 @@ body{
   color: #fff;
   font-size: 20px;
   background: #04011C;
-  min-height: 5000px;
+  min-height: 7000px;
 }
 
 *{
@@ -32,7 +32,80 @@ a{
   text-decoration: none;
 }
 
+/* Slick */
+.slick-initialized .slick-slide{
+  display: flex !important;
+  justify-content: center;
+  padding: 0 15px;
+}
+.slick-prev, .slick-next{
+  z-index: 1;
+}
+.slick-prev{
+  left: -10px !important;
+}
+.slick-next{
+  right: -10px !important;
+}
 
+/* News */
+@keyframes newsInfo {
+  0%{
+    opacity: 1;
+    width: 100%;
+    flex: 1 1 0%;
+  }
+  50%{
+    opacity: 0;
+    width: 0;
+    flex: 0 0 0%;
+  }
+  100%{
+    opacity: 0;
+    width: 0;
+    flex: 0 0 0%;
+    visibility: collapse;
+    /* display: none; */
+  }
+}
+.news-info{
+  transition: all .4s;
+  animation: newsInfo 0.4s ease 0s 1 normal forwards;
+}
+.news-item{
+  transition: all .4s;
+}
+
+/* Media queries */
+@media(min-width: 480px){
+  .slick-prev{
+    left: 15px !important;
+  }
+  .slick-next{
+    right: 15px !important;
+  }
+}
+
+@media(min-width: 768px){
+  .slick-prev{
+    left: 19% !important;
+  }
+  .slick-next{
+    right: 19% !important;
+  }
+}
+/* .slick-prev:before, .slick-next:before{
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10000000 !important;
+}
+.slick-next:before{
+  right: 15px;
+}
+.slick-prev:before{
+  left: 15px;
+} */
 /* @media(min-width: 1536){
   .Button{
     padding: 10px 40px;
