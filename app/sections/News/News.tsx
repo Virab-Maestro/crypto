@@ -29,6 +29,7 @@ export default function News() {
       newsInfo.current.classList.add('news-info');
       (newsInfo.current.parentNode as HTMLElement).style.transition = "all .4s";
       (newsInfo.current.parentNode as HTMLElement).style.width = "100%";
+      (newsInfo.current as HTMLElement).style.height = "0";
       
       //News items
       let news = document.querySelectorAll('a.news-item[href^="#"]'); //3 items
@@ -45,7 +46,7 @@ export default function News() {
   }
 
   return (
-    <div className="pt-16 lg:pt-24">
+    <div className="pt-16 lg:pt-24 lg:pb-16">
         <div className="">
           <div className="flex flex-col items-center justify-center lg:hidden">
             <Image className="mx-auto mb-4" src={news_icon} alt="news-icon"/>
@@ -104,7 +105,7 @@ export default function News() {
                   </a>
             </div>
 
-            <div ref={newsBtn} className="collapse opacity-0 transition-all absolute top-[58%] xl:top-[60%] left-1/2 -translate-x-1/2 mt-6 lg:mt-12 text-center">
+            <div ref={newsBtn} className="collapse opacity-0 transition-all absolute top-[58%] xl:top-[100%] left-1/2 -translate-x-1/2 mt-6 lg:mt-12 text-center">
               <Button1 title="Explore NFTs"></Button1>
             </div>
           </div>

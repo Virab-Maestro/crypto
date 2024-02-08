@@ -42,14 +42,15 @@ const ButtonReg = styled(Button, {
 
 interface Props {
     title: string,
-    width?: boolean
+    width?: boolean,
+    classes?: string;
 }
 
-export default function Button1({title, width}:Props) {
+export default function Button1({title, width, classes}:Props) {
   return (
     <>
         {/* <div>Button1</div> */}
-        <ButtonReg width={width}>{title}</ButtonReg>
+        <ButtonReg width={width} className={classes}>{title}</ButtonReg>
     </>
   )
 }
