@@ -50,7 +50,7 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                 },
                 '@media(pointer: coarse)':{
                     '.MuiCardMedia-img':{
-                        height: '160px',
+                        height: '200px',
                         transitionDelay: '.23s'
                     }
                 },
@@ -72,7 +72,7 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                 component="img"
                 alt="Product Image"
                 image={img}
-                sx={{borderRadius: '8px', height: '230px', transition: 'all .2s ease-in-out'}} //230
+                sx={{borderRadius: '8px', height: '270px', transition: 'all .2s ease-in-out'}} //230
                 />
                 <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} 
                 sx={{
@@ -96,6 +96,10 @@ export default function ProductCard({title, price, rating, img}:ProductCardProps
                     }}>
                         <Typography variant="h6" component="div" color="white"
                         sx={{
+                            whiteSpace: 'nowrap',
+                            width: '185px',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
                             '@media(min-width:1280px)':{
                                 maxWidth: '225px',
                                 maxHeight: '32px',

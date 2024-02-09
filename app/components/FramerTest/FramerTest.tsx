@@ -13,7 +13,7 @@ type visibilityType = {
     x?: any;
 }
 
-export default function FramerTest({children, classes, position}:{children: React.ReactNode, classes?: string, position?:string}) {
+export default function FramerTest({children, classes, position, delay}:{children: React.ReactNode, classes?: string, position?:string, delay?:number}) {
     
   const [ref, isInView] = useInView();
   const control = useAnimation();
@@ -90,7 +90,7 @@ export default function FramerTest({children, classes, position}:{children: Reac
         variants={side}
         initial="hidden"
         animate={control}
-        transition={{duration: 0.4, delay: 0.25}}
+        transition={{duration: 0.4, delay: delay}}
         className={classes}
         >
             {children}

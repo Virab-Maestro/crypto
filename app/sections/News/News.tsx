@@ -59,17 +59,17 @@ export default function News() {
               <a href="#" className="max-w-[300px] sm:max-w-[370px]">
                 <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4" src={news_1} alt="news-image"/>
                 <p className="text-lg mb-1 opacity-55">April 18, 2022</p>
-                <p className="text-2xl font-medium">Few Reasons to Sell NFTs on Nico</p>
+                <p className="text-2xl font-medium line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
               </a>
               <a href="#" className="max-w-[300px] sm:max-w-[370px]">
                 <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4" src={news_2} alt="news-image"/>
                 <p className="text-lg mb-1 opacity-55">April 18, 2022</p>
-                <p className="text-2xl font-medium">Few Reasons to Sell NFTs on Nico</p>
+                <p className="text-2xl font-medium line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
               </a>
               <a href="#" className="max-w-[300px] sm:max-w-[370px]">
                 <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4" src={news_1} alt="news-image"/>
                 <p className="text-lg mb-1 opacity-55">April 18, 2022</p>
-                <p className="text-2xl font-medium">Few Reasons to Sell NFTs on Nico</p>
+                <p className="text-2xl font-medium line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
               </a>
             {/* </Slider> */}
           </div>
@@ -90,17 +90,17 @@ export default function News() {
                 <a href="#" className="news-item max-w-[300px] sm:max-w-[370px] lg:max-w-[310px] 2xl:max-w-[373px] flex-1 translate-x-24">
                   <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4 2xl:mb-6" src={news_1} alt="news-image"/>
                   <p className="opacity-55 text-sm lg:text-lg 2xl:text-xl mb-1 lg:mb-3 2xl:mb-5">April 18, 2022</p>
-                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold">Few Reasons to Sell NFTs on Nico</p>
+                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
                 </a>
                 <a href="#" className="news-item max-w-[300px] sm:max-w-[370px] lg:max-w-[310px] 2xl:max-w-[373px] flex-1 translate-x-24">
                   <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4 2xl:mb-6" src={news_2} alt="news-image"/>
                   <p className="opacity-55 text-sm lg:text-lg 2xl:text-xl mb-1 lg:mb-3 2xl:mb-5">April 18, 2022</p>
-                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold">Few Reasons to Sell NFTs on Nico</p>
+                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
                 </a>
                 <a href="#" className="news-item max-w-[300px] sm:max-w-[370px] lg:max-w-[310px] 2xl:max-w-[373px] flex-1 translate-x-24">
                   <Image className="rounded-2xl object-cover max-w-full h-[250px] mb-4 2xl:mb-6" src={news_1} alt="news-image"/>
                   <p className="opacity-55 text-sm lg:text-lg 2xl:text-xl mb-1 lg:mb-3 2xl:mb-5">April 18, 2022</p>
-                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold">Few Reasons to Sell NFTs on Nico</p>
+                  <p className="text-md lg:text-2xl 2xl:text-3xl font-medium lg:font-bold line-clamp-2">Few Reasons to Sell NFTs on Nico</p>
                 </a>
             </div>
 
