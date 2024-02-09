@@ -1,4 +1,3 @@
-import Footer from "./components/Footer/Footer";
 import "./page.module.scss";
 import Category from "./sections/Category/Category";
 import Companies from "./sections/Companies/Companies";

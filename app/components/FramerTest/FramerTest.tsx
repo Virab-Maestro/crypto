@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -50,10 +50,12 @@ export default function FramerTest({children, classes, position}:{children: Reac
   }
   const fromRight = {
     hidden:{
+        visibility: 'hidden',
         opacity: 0,
         x: -100
     },
     visible:{
+      visibility: 'visible',
         opacity: 1,
         x: 0
     }
@@ -80,7 +82,7 @@ export default function FramerTest({children, classes, position}:{children: Reac
     if (isInView) {
       control.start("visible");
     }
-  }, [control, isInView]);
+  }, [control, isInView]); 
 
   return (
         <motion.div

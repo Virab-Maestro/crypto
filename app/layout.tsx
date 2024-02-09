@@ -26,11 +26,10 @@ export default function RootLayout({
           <div className="relative">
             <div className="max-w-full xl:max-w-7xl mx-auto px-3 sm:px-5">
               <Navbar/>
-              {/* <FramerTest>{children}</FramerTest> */}
               {children}
               <Footer/>
             </div>
-              <FramerTest classes="hidden sm:block absolute top-[1%] lg:top-[1%] xl:top-[2%] 2xl:top-[0.7%] -right-[1%] 2xl:right-[0%] -z-[20]" position="left">
+              <FramerTest classes="hidden sm:block min-[1921px]:hidden absolute top-[1%] lg:top-[1%] xl:top-[2%] 2xl:top-[0.7%] -right-[1%] 2xl:right-[0%] -z-[20]" position="left">
                     <div className="relative">
                       <img className="w-[400px] md:w-[500px] lg:w-[650px] 2xl:w-[870px] " src="/images/home_img.png" alt="home_img" />
                       <div className="absolute top-[47%] right-[48%] xl:right-[55%] text-base xl:text-2xl text-center font-bold bg-[#07003E] w-[115px] h-[115px] 

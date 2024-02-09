@@ -31,6 +31,20 @@ a{
   text-decoration: none;
 }
 
+/* Home counter */
+@keyframes count {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.counter{
+  animation: count 2s ease-in-out forwards;
+}
+
 /* Slick */
 .slick-initialized .slick-slide{
   display: flex !important;

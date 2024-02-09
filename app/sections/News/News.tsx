@@ -105,7 +105,7 @@ export default function News() {
                   </a>
             </div>
 
-            <div ref={newsBtn} className="collapse opacity-0 transition-all absolute top-[58%] xl:top-[100%] left-1/2 -translate-x-1/2 mt-6 lg:mt-12 text-center">
+            <div ref={newsBtn} className="collapse opacity-0 transition-all absolute top-[100%] left-1/2 -translate-x-1/2 mt-6 lg:mt-12 text-center">
               <Button1 title="Explore NFTs"></Button1>
             </div>
           </div>
